@@ -1,4 +1,5 @@
-import { Box, Container, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Text, VStack, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -27,6 +28,9 @@ const Index = () => {
         <VStack spacing={4}>
           <Text fontSize="2xl">Welcome to Your Blank Canvas</Text>
           <Text>Start creating your masterpiece.</Text>
+          <Link to="/events">
+            <Button>Go to Events</Button>
+          </Link>
         </VStack>
       </Container>
     </Box>
